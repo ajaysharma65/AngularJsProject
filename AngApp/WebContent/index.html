@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Whitewater Adventure</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="app/app.css"/>
+    <link rel="stylesheet" href="ext-modules/psFramework/psFramework.css"/>
+    <link rel="stylesheet" href="ext-modules/psMenu/psMenu.css"/>
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/jquery-1.11.0.min.js"></script>
+
+    <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
+
+    <script src="ext-modules/psMenu/psMenuModule.js"></script>
+    <script src="ext-modules/psMenu/psMenuController.js"></script>
+    <script src="ext-modules/psMenu/psMenuDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuGroupDirective.js"></script>
+
+    <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkController.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+
+    <script src="app/appModule.js"></script>
+
+</head>
+<body class="container-fluid">
+    <ps-framework title="Whitewater Adventure"
+                    sub-title="Administrative Application"
+                    icon-file="images/img.jpg">
+        <ps-menu>
+            <ps-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ps-menu-item>
+            <ps-menu-item label="Locations" icon="fa-location-arrow" route="locations"></ps-menu-item>
+            <ps-menu-item label="Raft Guides" icon="fa-user" route="guides"></ps-menu-item>
+
+            <ps-menu-group label="Equipment" icon="fa-gears">
+                <ps-menu-item label="Rafts" icon="fa-unlink" route="rafts"></ps-menu-item>
+                <ps-menu-item label="Paddles" icon="fa-magic" route="paddles" ></ps-menu-item>
+                <ps-menu-item label="Life Vests" icon="fa-life-ring" route="life vests"></ps-menu-item>
+            </ps-menu-group>
+            
+        </ps-menu>
+    </ps-framework>
+
+</body>
+</html>
